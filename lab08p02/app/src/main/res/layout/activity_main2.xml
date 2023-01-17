@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2"
+    android:padding="10dp">
+    <EditText
+        android:id="@+id/a2_editText01"
+        android:hint="Liczba sztuk"
+        android:inputType="number"
+        app:layout_constraintWidth_percent="0.45"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+    <Spinner
+        android:id="@+id/a2_spinner01"
+        app:layout_constraintWidth_percent="0.45"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:entries="@array/produkty"
+        app:layout_constraintBaseline_toBaselineOf="@id/a2_editText01"
+        app:layout_constraintRight_toRightOf="parent"/>
+    <Button
+        android:id="@+id/a2_button01"
+        android:text="Dodaj"
+        app:layout_constraintWidth_percent="0.45"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/a2_editText01"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+    <Button
+        android:id="@+id/a2_button02"
+        android:text="Anuluj"
+        app:layout_constraintWidth_percent="0.45"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/a2_editText01"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
